@@ -53,7 +53,7 @@ public class Mastermind {
         int codeRangeSize = max - min;
         // on test que sa marche bien
         if (codeRangeSize < length) {
-             System.out.println(("La valeur de ton code secret n'est pas bonne !!! tu dois avoir une valeur max plus grande que la min :/ et pas les même ^^");
+             System.out.println("La valeur de ton code secret n'est pas bonne !!! tu dois avoir une valeur max plus grande que la min :/ et pas les même ^^");
         }
      // le code secret 
     code = new HashMap<>();
@@ -91,7 +91,7 @@ public class Mastermind {
         // condition de nexturn le guess es l input donc %d la var 
         // pointeur C %d ? je diverge algo C ou java j'ai envie de faire les deux en meme temp
         while (result < essais) {
-            System.out.printf("Guess %d: ", result + 1);
+            System.out.printf("Voici l'essais %d: ", result + 1);
             String guess = input.nextLine();
 
             // on check si le resultat est bon si c ok on sort de la capsule
@@ -182,7 +182,7 @@ public class Mastermind {
                 }
             } else {
             	// j adore les pointeur j vais en mettre partout
-                 System.out.println(String.format("Guess values must be numbers between %d and %d!", min, max));
+                 System.out.println(String.format("J'ai dit entre %d and %d! XD concentre toi :D", min, max));
             }
         }
 
